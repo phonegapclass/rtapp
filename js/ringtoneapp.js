@@ -27,15 +27,16 @@ function getAudios(){
 	alert(1);
 	$.ajax({
 		type: "POST",
-		url: "http://igitsoft.com/carlos/apps/ringtonesPlatform/servApp.php",
+		url: "http://www.igitsoft.com/carlos/apps/ringtonesPlatform/servApp.php",
 		data: "pet=1"
-	}).done(function(data) {
-		rings = JSON.parse(data);
+	}).done(function(data){
+		alert(data);
+		/*rings = JSON.parse(data);
 		alert(rings);
 		for(var i in rings){
 			var li = '<li rel="'+rings[i].ruta+'><a href="#prueba" data-rel="dialog" data-transition="slidedown">'+rings[i].nombre+'</a></li>';
 			$('#page ul').append(li);
-		}
+		}*/
 	});
 }
 
