@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="css/redgray.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/ringtoneapp.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="a">
+	<div data-role="header">
+		<h1>RingTone APP</h1>
+        <a data-role="button" href="#info" data-transition="slidedown" class="ui-btn-right">Info</a>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#prueba" data-rel="dialog" data-transition="slidedown">Página dos</a></li>
+		</ul>		
+	</div>
+</div>
+
+<div data-role="page" id="info" data-theme="a">
+	<div data-role="header">
+		<h1>Info</h1>
+	</div>
+	<div data-role="content">
+		<a href="#" data-role="button" data-rel="back">Cerrar</a>		
+	</div>
+</div>
+
+<div data-role="page" id="prueba">
+	<div data-role="header">
+		<h1>Nombre</h1>
+	</div>
+	<div data-role="content">	
+		<!-- audio -->
+        <center>
+        	<img src="css/images/music.gif" style="width: 100px;" />
+        </center>
+        <audio id="Reproductor" src="http://carlos.igitsoft.com/apps/ringtonesPlatform/rings/FKYourlove.mp3" type="audio/mp3"></audio>
+        <a href="#" data-role="button" style="color:#fff;font:bold 12pt Arial;text-decoration:none;" id="down">Descargar</a>
+	</div>
+</div>
+</body>
+</html>
